@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 方正兰亭超细黑简体;
+}
+body::-webkit-scrollbar {
+    width: 1px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #a4a4a4;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #5b5b5b;
+}
+
+::-webkit-file-upload-button {
+    border: none;
+    background-color: #4c4c4c;
+    font-family: 方正兰亭超细黑简体;
+    margin-top: 3px;
+    font-size: 18px;
+    color: white;
+}
+progress{
+    width: 100%;
+    height: 2px;
+    background-color: #e95b6d;
+    border-radius: 15px;
+}
+progress::-webkit-progress-bar { background: #a4a4a4; }
+progress::-webkit-progress-value  { background: #0064B4; }
+/*DIV鏍蜂緥灏哄*/
+
+/*Button鏍峰紡*/
+.Button{
+    font-family: 方正兰亭超细黑简体;
+    color: white;
+    float: left;
+    cursor: pointer;
+    border: none;
+}
+.Button:hover{
+    background: #f05654;
+}
+.Button_50{
+    width:50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.Button_Circle{
+    display:inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.1);
+}
+.Circle_50{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+.Circle_60{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 20px;
+}
+.Circle_80{
+    width:80px;
+    height: 80px;
+    border-radius: 80px;
+    font-size: 22px;
+}
+/*h*/
+.H1{
+    display: block;
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 35%;
+    font-size: 50px;
+    font-family: 方正兰亭超细黑简体;
+    color: white;
+    border: 2px white solid;
+}
+.H1_2{
+    display: inline-block;
+    font-family: 方正兰亭超细黑简体;
+    font-size:20px;
+    text-align: center;
+}
+.H3{
+    display: block;
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 35%;
+    font-size: 50px;
+    font-family: 方正兰亭超细黑简体;
+    color: white;
+    border: 2px white solid;
+}
+/*杈撳叆*/
+.InputPanel{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.InputGroup{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.InputGroup input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: rgba(0,0,0,0.2);
+    font-family: 方正兰亭超细黑简体;
+    font-size: 20px;
+    color: white;
+}
+.InputGroup img{
+    width: 25%;
+    height: 30px;
+}
+
+
+input::placeholder{
+    color:gray;
+}
+
+label{
+    color: white;
+    cursor: pointer;
+    font-family: 方正兰亭超细黑简体;
+    font-size: 20px;
+}
+
+.error{
+    margin-right: 2%;
+    float: right;
+    color: #f44336;
+}
+
+.feedback{
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 30%;
+    margin-top:10px;
+    margin-left: 35%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    font-family:方正兰亭超细黑简体;
+    z-index: 50;
+    box-shadow: #5b5b5b 1px 3px 5px;
+}
+.feedback_success{
+    background-color: rgba(105,178,115,0.8);
+}
+.feedback_error{
+    background-color: rgba(255, 80, 123,0.8);
+}

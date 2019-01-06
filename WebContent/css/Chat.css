@@ -1,0 +1,393 @@
+#background{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #ff81a4, #69b8ee);
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: #5b5b5b 1px 1px 1px;
+    color: white;
+}
+#chatContainer{
+    position: fixed;
+    display:none;
+    width: 80%;
+    margin-top: 40px;
+    height: 100%;
+}
+#footer{
+    position: fixed;
+    width: 20%;
+    height: 150px;
+    bottom: 0px;
+    right: 0px;
+    border-top: 1px #7c7c7c solid;
+    color:white;
+    font-family: 方正兰亭超细黑简体;
+}
+#functionMenu{
+    display:inline-block;
+    position: fixed;
+    margin-top: 40px;
+    right: 0px;
+    width: 20%;
+    height: calc(100% - 190px);
+}
+#chatBox{
+    display: inline-block;
+    margin-top: 1%;
+    width: 98%;
+    margin-left: 1%;
+    height: 92%;
+    background-color: rgba(0,0,0,0.3);
+}
+.function{
+    display: inline-block;
+    background-color: rgba(0,0,0,0.3);
+    margin-top: 12px;
+    width: 40%;
+    height: 120px;
+    margin-left: 6%;
+    float: left;
+    cursor:pointer;
+    color:white;
+    transition-duration: 0.3s;
+    box-shadow: #000000 1px 1px 2px;
+}
+.function i{
+	margin-top:15px;
+	margin-left:15px;
+}
+.function:hover{
+	background: rgba(0,0,0,0.5);
+	transform:scale(1.1,1.1);
+	color:#00a4da;
+}
+#title{
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    line-height: 44px;
+    float: left;
+}
+#userInfo{
+    display: inline-block;
+    width: 20%;
+    height: 44px;
+    float: left;
+    cursor: pointer;
+    color: #e95b6d;
+}
+#userInfo:hover{
+    background-color:rgba(0,0,0,0.2) ;
+}
+
+.userHead{
+    display:inline-block;
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    float: left;
+}
+.userName{
+    float: left;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 方正兰亭超细黑简体;
+    color: white;
+    margin-left:10px;
+    line-height: 44px;
+}
+#logout{
+    display: inline-block;
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+    color: #acacac;
+    cursor: pointer;
+}
+#logout:hover{
+    color: #e95b6d;
+}
+#openFriends{
+    display: inline-block;
+    float: right;
+    margin-top: 8px;
+    margin-right: 15px;
+    color: #b9b9b9;
+    cursor: pointer;
+}
+#openFriends:hover{
+    color: #f44336;
+}
+
+#userDetail{
+    position: fixed;
+    display: none;
+    width: 30%;
+    right: calc(20% + 13px);
+    height: 500px;
+    background-color: #4c4c4c;
+    box-shadow: #000000 1px 3px 3px;
+    border-radius: 10px;
+    z-index: 12;
+}
+#userHead{
+    display: inline-block;
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+}
+#userHead img{
+    width: 100px;
+    height:100px;
+    float: left;
+}
+
+#uploadPanel{
+    float: left;
+    width: calc(100% - 100px);
+}
+#uploadPanel input{
+    width: 100%;
+    height: 49px;
+    color: white;
+    font-size: 18px;
+    background-color: #4c4c4c;
+}
+#uploadPanel input:hover{
+    background-color: #e95b6d;
+}
+
+#friends{
+    position: fixed;
+    display: none;
+    width: 20%;
+    right: 1px;
+    margin-top: 45px;
+    height: calc(100% - 190px);
+    background-color: rgba(0,0,0,0.75);
+    z-index: 12;
+    box-shadow: #000000 1px 3px 3px;
+
+}
+#friendList{
+    overflow-y: scroll;
+    width: 100%;
+    height:calc(100% - 25px);
+}
+#friendList::-webkit-scrollbar {
+    width: 1px;
+}
+#friendList::-webkit-scrollbar-track {
+    background-color: #a4a4a4;
+}
+#friendList::-webkit-scrollbar-thumb {
+    background-color: #5b5b5b;
+}
+#friendList li{
+    display: inline-block;
+    padding: 5px;
+    width: 96%;
+    height: 59px;
+    color: #b9b9b9;
+    cursor: pointer;
+}
+#friendList li img{
+    margin-top: 10px;
+}
+#friendList li h1{
+    margin-top: 10px;
+}
+#friendList li i{
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+#friendList li i:hover{
+    color: #e95b6d;
+}
+#friendList li:hover{
+    background-color: rgba(0, 127, 218, 0.3);
+    color: white;
+}
+
+#searchFriend{
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+}
+#searchFriend input{
+    width: 80%;
+    height: 25px;
+    border: none;
+    background-color: rgba(233, 91, 109, 0.7);
+    font-size: 20px;
+    color: white;
+    z-index: 14;
+}
+#searchFriend input::placeholder{
+    font-size: 13px;
+    line-height: 25px;
+    color: #c1c1c1;
+}
+#searchFriend i{
+    float: right;
+    margin-right: 15px;
+    color: #acacac;
+    cursor: pointer;
+}
+#searchFriend i:hover{
+    color: #e95b6d;
+}
+
+#colseChatBox{
+    float: right;
+    font-size: 20px;
+    font-family: 方正兰亭超细黑简体;
+    color: white;
+    margin-right: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#colseChatBox:hover{
+    color: #e95b6d;
+}
+#friendName{
+    float: left;
+    font-size: 20px;
+    font-family: 方正兰亭超细黑简体;
+    color: white;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+#chatPanel{
+    display: inline-block;
+    width: 100%;
+    height: 75%;
+    border-bottom: 1px solid #b1b1b1;
+    overflow-y: scroll;
+}
+#chatPanel::-webkit-scrollbar {
+    width: 1px;
+}
+#chatPanel::-webkit-scrollbar-track {
+    background-color: #a4a4a4;
+}
+#chatPanel::-webkit-scrollbar-thumb {
+    background-color: #5b5b5b;
+}
+
+#sendMessage{
+    margin-left: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);
+    font-size: 20px;
+    color: white;
+    width: calc(100% - 134px);
+    height: 100px;
+    resize: none;
+    margin-top: 10px;
+    overflow-y: scroll;
+    box-shadow: black 1px 1px 2px;
+}
+#sendMessage::-webkit-scrollbar {
+    width: 1px;
+}
+#sendMessage::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0);
+}
+#sendMessage::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0);
+}
+#sendButton{
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 100px;
+    height:100px;
+    border-radius: 80px;
+    float: right;
+    font-size: 18px;
+    border: none;
+    font-family: 方正兰亭超细黑简体;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    cursor: pointer;
+    box-shadow: black 1px 1px 2px;
+}
+#sendButton:hover{
+    background-color: #e95b6d;
+}
+.friend{
+    margin-left: 30px;
+    float: left;
+}
+.friend img{
+    float: left;
+}
+.my{
+    margin-right: 30px;
+    float: right;
+}
+.my img{
+    float: right;
+}
+.messagePop{
+    margin-top: 5px;
+    display: inline-block;
+    width: calc(100% - 60px);
+    height:50px;
+}
+.friend span{
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    background-color: rgba(0, 127, 218, 0.4);
+    border-radius: 15px;
+    color: white;
+    float: left;
+    line-height: 50px;
+    box-shadow: 1px 1px 2px black;
+}
+.my span{
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    background-color: rgba(29, 241, 65, 0.4);
+    border-radius: 15px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    box-shadow: 1px 1px 2px black;
+}
+.unreadFlag{
+    height: 100%;
+    width: 15px;
+    margin-left: -15px;
+    background-color: #e95b6d;
+    float: left;
+    display: inline-block;
+}
+.friendId{
+	display:none;
+}
+.friendAccount{
+	display:none;
+}
+#senderAccount{
+	display:none;
+}
+#feedback{
+	z-index:13;
+}
